@@ -14,6 +14,11 @@ DEVICE_PATH := device/xiaomi/dipper
 # Assert
 TARGET_OTA_ASSERT_DEVICE := dipper
 
+# Camera
+TARGET_CAMERA_PACKAGE_NAME := com.android.camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+TARGET_USES_MIUI_CAMERA := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
