@@ -9,6 +9,7 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+IS_OFFICIAL := true
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_dipper
 PRODUCT_DEVICE := dipper
