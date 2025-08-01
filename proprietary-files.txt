@@ -1,4 +1,5 @@
 # Device proprietary files - from dipper's MIUI package V12.5.2.0.QEACNXM CN stable version
+# Unpinned blobs from munch-user 14 RKQ1.211001.001 OS1.0.5.0.ULMMIXM release-keys
 
 # Current blobs with ELF checks disabled:
 # libSNPE depends on libgcc intrinsics (unresolved __aeabi_f2lz and __aeabi_ul2f symbols)
@@ -217,10 +218,13 @@ vendor/lib/libpn553_fw.so
 # QDCM calibration data
 vendor/etc/qdcm_calib_data_ss_notch_fhd_cmd_dsi_panel.xml
 
-# Secure element
-vendor/bin/hw/vendor.qti.secure_element@1.0-service
-vendor/etc/init/vendor.qti.secure_element@1.0-service.rc
-vendor/lib64/hw/android.hardware.secure_element@1.0-impl.so
+# Secure element - from RKQ1.211001.001 OS1.0.5.0.ULMMIXM
+vendor/bin/hw/vendor.qti.secure_element@1.2-service;DISABLE_DEPS
+vendor/etc/init/vendor.qti.secure_element@1.2-service.rc;DISABLE_DEPS
+vendor/lib64/android.hardware.secure_element@1.0-impl.so;DISABLE_DEPS
+vendor/lib64/jcos_nq_client.so;DISABLE_DEPS
+vendor/lib64/ls_nq_client.so;DISABLE_DEPS
+vendor/lib64/se_nq_extn_client.so;DISABLE_DEPS
 
 # Sensors
 vendor/lib64/sensors.ssc.so
